@@ -6,6 +6,7 @@ public class Main {
 	static Scanner scanner = new Scanner(System.in);
     static ArrayList<String[]> employees = new ArrayList<>();
     static final String FILE_NAME = "C:\\Users\\markl\\eclipse-workspace\\MotorPH\\src\\EmployeeData.csv";
+    static final String Attendancefile = "attendance.csv"; // Var for Attendance Record.csv
 	
     public static void main(String[] args) {
 		loadEmployees(); // Load existing data
@@ -19,8 +20,9 @@ public class Main {
 	            System.out.println("\n=== Welcome to Employee Management System ===");
 	            System.out.println("1. Add Employee");
 	            System.out.println("2. View Employees");
-	            System.out.println("3. Remove Employee");
-	            System.out.println("4. Exit");
+	            System.out.println("3. View Attendance Record");
+	            System.out.println("4. Remove Employee");
+	            System.out.println("5. Exit");
 	            System.out.print("Select an option: ");
 				String choice = scanner.nextLine();
 
@@ -31,10 +33,13 @@ public class Main {
 	                case "2":
 	                    viewEmployees();
 	                    break;
-	                case "3":
+                    case "3":
+                        AttendanceRecord attendance = new AttendanceRecord();
+                        break;
+	                case "4":
 	                    removeEmployee();
 	                    break;
-	                case "4":
+	                case "5":
 	                    saveEmployees(); // Save before exiting
 	                    System.out.println("Exiting... Data saved.");
 	                    return;
