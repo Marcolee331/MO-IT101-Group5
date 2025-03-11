@@ -24,7 +24,7 @@ public class AttendanceRecords {
                     }
 
                     catch (Exception e) {
-                        System.out.println("Error parsing log in/log out times for row: " + line);
+                        System.out.println("Error parsing log in/log out times for row: ");
                     }
                 }
                 System.out.println();
@@ -32,11 +32,11 @@ public class AttendanceRecords {
         }
 
         catch (FileNotFoundException e) {
-            System.out.println("File not found: " + file);
+            System.out.println("File not found: ");
         }
 
         catch (IOException e) {
-            System.out.println("Error reading file: " + file);
+            System.out.println("Error reading file: ");
         }
     }
 
