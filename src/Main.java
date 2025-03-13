@@ -34,6 +34,8 @@ public class Main {
 	                case "3":
 	                	netSalaryCalulation();
 	                	break;
+			case "4":
+				return;
 	                default:
 	                    System.out.println("Invalid option! Try again.");   
 	            }
