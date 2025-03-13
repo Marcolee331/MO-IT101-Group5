@@ -82,7 +82,7 @@ private static void viewEmployees() {
          Employee employee = employees[a];
          System.out.print("Emp ID: "+ employee.getEmpNo() + ", Employee Name: " + employee.getLastName()
                  + " " + employee.getFirstName()
-                 + ", Position: " + employee.getPosition() + "\n");
+                 + ", Position: " + employee.getPosition() + ", Date of Birth:  " + employee.getBirthday() +"\n");
      
      }
 }
