@@ -1,9 +1,9 @@
 
-
 class EmployeeData extends EmployeeModel {
-	//Creating a new class to create instances of the objects inherited from the Employee class.
+	// Creating a new class to create instances of the objects inherited from the
+	// Employee class.
 	public EmployeeData() {
-	Employee ceo = new Employee();
+		Employee ceo = new Employee();
 		ceo.setEmpNo("10001");
 		ceo.setLastName("Garcia");
 		ceo.setFirstName("Manuel III");
@@ -23,8 +23,8 @@ class EmployeeData extends EmployeeModel {
 		ceo.setClothingAllowance(1000);
 		ceo.setSemiMonthlyRate(45000);
 		ceo.setHourlyRate(535.71);
-		
-	Employee coo = new Employee();
+
+		Employee coo = new Employee();
 		coo.setEmpNo("10002");
 		coo.setLastName("Lim");
 		coo.setFirstName("Antonio");
@@ -44,8 +44,8 @@ class EmployeeData extends EmployeeModel {
 		coo.setClothingAllowance(1000);
 		coo.setSemiMonthlyRate(30000);
 		coo.setHourlyRate(357.14);
-		
-	Employee cfo = new Employee();	
+
+		Employee cfo = new Employee();
 		cfo.setEmpNo("10003");
 		cfo.setLastName("Aquino");
 		cfo.setFirstName("Bianca Sofia");
@@ -64,9 +64,9 @@ class EmployeeData extends EmployeeModel {
 		cfo.setPhoneAllowance(2000);
 		cfo.setClothingAllowance(1000);
 		cfo.setSemiMonthlyRate(30000);
-		cfo.setHourlyRate(357.14);	
-		
-	Employee cmo = new Employee();	
+		cfo.setHourlyRate(357.14);
+
+		Employee cmo = new Employee();
 		cmo.setEmpNo("10004");
 		cmo.setLastName("Reyes");
 		cmo.setFirstName("Isabella");
@@ -85,9 +85,9 @@ class EmployeeData extends EmployeeModel {
 		cmo.setPhoneAllowance(2000);
 		cmo.setClothingAllowance(1000);
 		cmo.setSemiMonthlyRate(30000);
-		cmo.setHourlyRate(357.14);		
-		
-	Employee itops = new Employee();	
+		cmo.setHourlyRate(357.14);
+
+		Employee itops = new Employee();
 		itops.setEmpNo("10005");
 		itops.setLastName("Hernandez");
 		itops.setFirstName("Eduard");
@@ -106,9 +106,9 @@ class EmployeeData extends EmployeeModel {
 		itops.setPhoneAllowance(1000);
 		itops.setClothingAllowance(1000);
 		itops.setSemiMonthlyRate(30000);
-		itops.setHourlyRate(313.51);		
-		
-	Employee hrMgr = new Employee();	
+		itops.setHourlyRate(313.51);
+
+		Employee hrMgr = new Employee();
 		hrMgr.setEmpNo("10006");
 		hrMgr.setLastName("Villanueva");
 		hrMgr.setFirstName("Andrea Mae");
@@ -121,15 +121,15 @@ class EmployeeData extends EmployeeModel {
 		hrMgr.setPagibigNo("441093369646");
 		hrMgr.setStatus("Regular");
 		hrMgr.setPosition("HR Managerr");
-		hrMgr.setSupervisor(coo.getLastName() +  " , " + coo.getFirstName());
+		hrMgr.setSupervisor(coo.getLastName() + " , " + coo.getFirstName());
 		hrMgr.setBasicSalary(52670);
 		hrMgr.setRiceSubsidy(1500);
 		hrMgr.setPhoneAllowance(1000);
 		hrMgr.setClothingAllowance(1000);
 		hrMgr.setSemiMonthlyRate(26335);
-		hrMgr.setHourlyRate(313.51);	
-		
-	Employee hrTM = new Employee();	
+		hrMgr.setHourlyRate(313.51);
+
+		Employee hrTM = new Employee();
 		hrTM.setEmpNo("10007");
 		hrTM.setLastName("San Jose");
 		hrTM.setFirstName("Brad");
@@ -142,15 +142,15 @@ class EmployeeData extends EmployeeModel {
 		hrTM.setPagibigNo("210850209964");
 		hrTM.setStatus("Regular");
 		hrTM.setPosition("HR Team Leader");
-		hrTM.setSupervisor(hrMgr.getLastName() +  " , " + hrMgr.getFirstName());
+		hrTM.setSupervisor(hrMgr.getLastName() + " , " + hrMgr.getFirstName());
 		hrTM.setBasicSalary(42975);
 		hrTM.setRiceSubsidy(1500);
 		hrTM.setPhoneAllowance(800);
 		hrTM.setClothingAllowance(800);
 		hrTM.setSemiMonthlyRate(21488);
-		hrTM.setHourlyRate(255.80);		
-		
-	Employee hrRF1 = new Employee();	
+		hrTM.setHourlyRate(255.80);
+
+		Employee hrRF1 = new Employee();
 		hrRF1.setEmpNo("10008");
 		hrRF1.setLastName("Romualdez");
 		hrRF1.setFirstName("Alice");
@@ -163,15 +163,15 @@ class EmployeeData extends EmployeeModel {
 		hrRF1.setPagibigNo("211385556888");
 		hrRF1.setStatus("Regular");
 		hrRF1.setPosition("HR Rank and File");
-		hrRF1.setSupervisor(hrTM.getLastName() +  " , " + hrTM.getFirstName());
+		hrRF1.setSupervisor(hrTM.getLastName() + " , " + hrTM.getFirstName());
 		hrRF1.setBasicSalary(22500);
 		hrRF1.setRiceSubsidy(1500);
 		hrRF1.setPhoneAllowance(500);
 		hrRF1.setClothingAllowance(500);
 		hrRF1.setSemiMonthlyRate(11250);
-		hrRF1.setHourlyRate(133.93);		
-		
-	Employee hrRF2 = new Employee();	
+		hrRF1.setHourlyRate(133.93);
+
+		Employee hrRF2 = new Employee();
 		hrRF2.setEmpNo("10009");
 		hrRF2.setLastName("Atienza");
 		hrRF2.setFirstName("Rosie ");
@@ -184,15 +184,15 @@ class EmployeeData extends EmployeeModel {
 		hrRF2.setPagibigNo("260107732354");
 		hrRF2.setStatus("Regular");
 		hrRF2.setPosition("HR Rank and File");
-		hrRF2.setSupervisor(hrTM.getLastName() +  " , " + hrTM.getFirstName());
+		hrRF2.setSupervisor(hrTM.getLastName() + " , " + hrTM.getFirstName());
 		hrRF2.setBasicSalary(22500);
 		hrRF2.setRiceSubsidy(1500);
 		hrRF2.setPhoneAllowance(500);
 		hrRF2.setClothingAllowance(500);
 		hrRF2.setSemiMonthlyRate(11250);
-		hrRF2.setHourlyRate(133.93);	
-		
-	Employee acctgHead = new Employee();	
+		hrRF2.setHourlyRate(133.93);
+
+		Employee acctgHead = new Employee();
 		acctgHead.setEmpNo("10010");
 		acctgHead.setLastName("Alvaro");
 		acctgHead.setFirstName("Roderick ");
@@ -205,15 +205,15 @@ class EmployeeData extends EmployeeModel {
 		acctgHead.setPagibigNo("799254095212");
 		acctgHead.setStatus("Regular");
 		acctgHead.setPosition("Accounting Head");
-		acctgHead.setSupervisor(cfo.getLastName() +  " , " + cfo.getFirstName());
+		acctgHead.setSupervisor(cfo.getLastName() + " , " + cfo.getFirstName());
 		acctgHead.setBasicSalary(52670);
 		acctgHead.setRiceSubsidy(1500);
 		acctgHead.setPhoneAllowance(1000);
 		acctgHead.setClothingAllowance(1000);
 		acctgHead.setSemiMonthlyRate(26335);
-		acctgHead.setHourlyRate(313.51);	
-		
-	Employee payrollMgr = new Employee();	
+		acctgHead.setHourlyRate(313.51);
+
+		Employee payrollMgr = new Employee();
 		payrollMgr.setEmpNo("10011");
 		payrollMgr.setLastName("Salcedo");
 		payrollMgr.setFirstName("Anthony ");
@@ -226,15 +226,15 @@ class EmployeeData extends EmployeeModel {
 		payrollMgr.setPagibigNo("218002473454");
 		payrollMgr.setStatus("Regular");
 		payrollMgr.setPosition("Payroll Manager");
-		payrollMgr.setSupervisor(acctgHead.getLastName() +  " , " + acctgHead.getFirstName());
+		payrollMgr.setSupervisor(acctgHead.getLastName() + " , " + acctgHead.getFirstName());
 		payrollMgr.setBasicSalary(50825);
 		payrollMgr.setRiceSubsidy(1500);
 		payrollMgr.setPhoneAllowance(1000);
 		payrollMgr.setClothingAllowance(1000);
 		payrollMgr.setSemiMonthlyRate(25413);
-		payrollMgr.setHourlyRate(302.53);	
-		
-	Employee payrollTL = new Employee();	
+		payrollMgr.setHourlyRate(302.53);
+
+		Employee payrollTL = new Employee();
 		payrollTL.setEmpNo("10012");
 		payrollTL.setLastName("Lopez");
 		payrollTL.setFirstName("Josie");
@@ -247,15 +247,15 @@ class EmployeeData extends EmployeeModel {
 		payrollTL.setPagibigNo("113071293354");
 		payrollTL.setStatus("Regular");
 		payrollTL.setPosition("Payroll Team Leader");
-		payrollTL.setSupervisor(payrollMgr.getLastName() +  " , " + payrollMgr.getFirstName());
+		payrollTL.setSupervisor(payrollMgr.getLastName() + " , " + payrollMgr.getFirstName());
 		payrollTL.setBasicSalary(38475);
 		payrollTL.setRiceSubsidy(1500);
 		payrollTL.setPhoneAllowance(800);
 		payrollTL.setClothingAllowance(800);
 		payrollTL.setSemiMonthlyRate(19238);
-		payrollTL.setHourlyRate(229.02);	
-		
-	Employee payrollRF1 = new Employee();	
+		payrollTL.setHourlyRate(229.02);
+
+		Employee payrollRF1 = new Employee();
 		payrollRF1.setEmpNo("10013");
 		payrollRF1.setLastName("Farala");
 		payrollRF1.setFirstName("Martha");
@@ -268,15 +268,15 @@ class EmployeeData extends EmployeeModel {
 		payrollRF1.setPagibigNo("631130283546");
 		payrollRF1.setStatus("Regular");
 		payrollRF1.setPosition("Payroll Rank and File");
-		payrollRF1.setSupervisor(payrollMgr.getLastName() +  " , " + payrollMgr.getFirstName());
+		payrollRF1.setSupervisor(payrollMgr.getLastName() + " , " + payrollMgr.getFirstName());
 		payrollRF1.setBasicSalary(24000);
 		payrollRF1.setRiceSubsidy(1500);
 		payrollRF1.setPhoneAllowance(500);
 		payrollRF1.setClothingAllowance(500);
 		payrollRF1.setSemiMonthlyRate(12000);
-		payrollRF1.setHourlyRate(142.86);	
-		
-	Employee payrollRF2 = new Employee();	
+		payrollRF1.setHourlyRate(142.86);
+
+		Employee payrollRF2 = new Employee();
 		payrollRF2.setEmpNo("10014");
 		payrollRF2.setLastName("Martinez");
 		payrollRF2.setFirstName("Leila");
@@ -289,15 +289,15 @@ class EmployeeData extends EmployeeModel {
 		payrollRF2.setPagibigNo("101205445886");
 		payrollRF2.setStatus("Regular");
 		payrollRF2.setPosition("Payroll Rank and File");
-		payrollRF2.setSupervisor(payrollMgr.getLastName() +  " , " + payrollMgr.getFirstName());
+		payrollRF2.setSupervisor(payrollMgr.getLastName() + " , " + payrollMgr.getFirstName());
 		payrollRF2.setBasicSalary(24000);
 		payrollRF2.setRiceSubsidy(1500);
 		payrollRF2.setPhoneAllowance(500);
 		payrollRF2.setClothingAllowance(500);
 		payrollRF2.setSemiMonthlyRate(12000);
-		payrollRF2.setHourlyRate(142.86);	
-		
-	Employee acctMgr = new Employee();	
+		payrollRF2.setHourlyRate(142.86);
+
+		Employee acctMgr = new Employee();
 		acctMgr.setEmpNo("10015");
 		acctMgr.setLastName("Romualdez");
 		acctMgr.setFirstName("Fredrick ");
@@ -310,15 +310,15 @@ class EmployeeData extends EmployeeModel {
 		acctMgr.setPagibigNo("223057707853");
 		acctMgr.setStatus("Regular");
 		acctMgr.setPosition("Account Manager");
-		acctMgr.setSupervisor(coo.getLastName() +  " , " + coo.getFirstName());
+		acctMgr.setSupervisor(coo.getLastName() + " , " + coo.getFirstName());
 		acctMgr.setBasicSalary(53500);
 		acctMgr.setRiceSubsidy(1500);
 		acctMgr.setPhoneAllowance(1000);
 		acctMgr.setClothingAllowance(1000);
 		acctMgr.setSemiMonthlyRate(26750);
-		acctMgr.setHourlyRate(318.45);		
-		
-	Employee acctTL1 = new Employee();	
+		acctMgr.setHourlyRate(318.45);
+
+		Employee acctTL1 = new Employee();
 		acctTL1.setEmpNo("10016");
 		acctTL1.setLastName("Mata");
 		acctTL1.setFirstName("Christian ");
@@ -331,15 +331,15 @@ class EmployeeData extends EmployeeModel {
 		acctTL1.setPagibigNo("631052853464");
 		acctTL1.setStatus("Regular");
 		acctTL1.setPosition("Account Team Leader");
-		acctTL1.setSupervisor(acctMgr.getLastName() +  " , " + acctMgr.getFirstName());
+		acctTL1.setSupervisor(acctMgr.getLastName() + " , " + acctMgr.getFirstName());
 		acctTL1.setBasicSalary(42975);
 		acctTL1.setRiceSubsidy(1500);
 		acctTL1.setPhoneAllowance(800);
 		acctTL1.setClothingAllowance(800);
 		acctTL1.setSemiMonthlyRate(21488);
-		acctTL1.setHourlyRate(255.80);	
-		
-	Employee acctTL2 = new Employee();	
+		acctTL1.setHourlyRate(255.80);
+
+		Employee acctTL2 = new Employee();
 		acctTL2.setEmpNo("10017");
 		acctTL2.setLastName("De Leon");
 		acctTL2.setFirstName("Selena  ");
@@ -352,15 +352,15 @@ class EmployeeData extends EmployeeModel {
 		acctTL2.setPagibigNo("719007608464");
 		acctTL2.setStatus("Regular");
 		acctTL2.setPosition("Account Team Leader");
-		acctTL2.setSupervisor(acctMgr.getLastName() +  " , " + acctMgr.getFirstName());
+		acctTL2.setSupervisor(acctMgr.getLastName() + " , " + acctMgr.getFirstName());
 		acctTL2.setBasicSalary(41850);
 		acctTL2.setRiceSubsidy(1500);
 		acctTL2.setPhoneAllowance(800);
 		acctTL2.setClothingAllowance(800);
 		acctTL2.setSemiMonthlyRate(20925);
-		acctTL2.setHourlyRate(249.11);	
-		
-	Employee acctRF1 = new Employee();	
+		acctTL2.setHourlyRate(249.11);
+
+		Employee acctRF1 = new Employee();
 		acctRF1.setEmpNo("10018");
 		acctRF1.setLastName("San Jose");
 		acctRF1.setFirstName("Allison ");
@@ -373,15 +373,15 @@ class EmployeeData extends EmployeeModel {
 		acctRF1.setPagibigNo("114901859343");
 		acctRF1.setStatus("Regular");
 		acctRF1.setPosition("Account Rank and File");
-		acctRF1.setSupervisor(acctTL1.getLastName() +  " , " + acctTL1.getFirstName());
+		acctRF1.setSupervisor(acctTL1.getLastName() + " , " + acctTL1.getFirstName());
 		acctRF1.setBasicSalary(22500);
 		acctRF1.setRiceSubsidy(1500);
 		acctRF1.setPhoneAllowance(500);
 		acctRF1.setClothingAllowance(500);
 		acctRF1.setSemiMonthlyRate(11250);
-		acctRF1.setHourlyRate(133.93);	
-		
-	Employee acctRF2 = new Employee();	
+		acctRF1.setHourlyRate(133.93);
+
+		Employee acctRF2 = new Employee();
 		acctRF2.setEmpNo("10019");
 		acctRF2.setLastName("Rosario");
 		acctRF2.setFirstName("Cydney  ");
@@ -394,15 +394,15 @@ class EmployeeData extends EmployeeModel {
 		acctRF2.setPagibigNo("265104358643");
 		acctRF2.setStatus("Regular");
 		acctRF2.setPosition("Account Rank and File");
-		acctRF2.setSupervisor(acctTL1.getLastName() +  " , " + acctTL1.getFirstName());
+		acctRF2.setSupervisor(acctTL1.getLastName() + " , " + acctTL1.getFirstName());
 		acctRF2.setBasicSalary(22500);
 		acctRF2.setRiceSubsidy(1500);
 		acctRF2.setPhoneAllowance(500);
 		acctRF2.setClothingAllowance(500);
 		acctRF2.setSemiMonthlyRate(11250);
-		acctRF2.setHourlyRate(133.93);	
-		
-	Employee acctRF3 = new Employee();	
+		acctRF2.setHourlyRate(133.93);
+
+		Employee acctRF3 = new Employee();
 		acctRF3.setEmpNo("10020");
 		acctRF3.setLastName("Bautista");
 		acctRF3.setFirstName("Mark");
@@ -415,15 +415,15 @@ class EmployeeData extends EmployeeModel {
 		acctRF3.setPagibigNo("260054585575");
 		acctRF3.setStatus("Regular");
 		acctRF3.setPosition("Account Rank and File");
-		acctRF3.setSupervisor(acctTL1.getLastName() +  " , " + acctTL1.getFirstName());
+		acctRF3.setSupervisor(acctTL1.getLastName() + " , " + acctTL1.getFirstName());
 		acctRF3.setBasicSalary(23250);
 		acctRF3.setRiceSubsidy(1500);
 		acctRF3.setPhoneAllowance(500);
 		acctRF3.setClothingAllowance(500);
 		acctRF3.setSemiMonthlyRate(11625);
-		acctRF3.setHourlyRate(138.39);	
-		
-	Employee acctRF4 = new Employee();	
+		acctRF3.setHourlyRate(138.39);
+
+		Employee acctRF4 = new Employee();
 		acctRF4.setEmpNo("10021");
 		acctRF4.setLastName("Lazaro");
 		acctRF4.setFirstName("Darlene");
@@ -436,15 +436,15 @@ class EmployeeData extends EmployeeModel {
 		acctRF4.setPagibigNo("104907708845");
 		acctRF4.setStatus("Probationary");
 		acctRF4.setPosition("Account Rank and File");
-		acctRF4.setSupervisor(acctTL1.getLastName() +  " , " + acctTL1.getFirstName());
+		acctRF4.setSupervisor(acctTL1.getLastName() + " , " + acctTL1.getFirstName());
 		acctRF4.setBasicSalary(23250);
 		acctRF4.setRiceSubsidy(1500);
 		acctRF4.setPhoneAllowance(500);
 		acctRF4.setClothingAllowance(500);
 		acctRF4.setSemiMonthlyRate(11625);
 		acctRF4.setHourlyRate(138.39);
-		
-	Employee acctRF5 = new Employee();	
+
+		Employee acctRF5 = new Employee();
 		acctRF5.setEmpNo("10021");
 		acctRF5.setLastName("Lazaro");
 		acctRF5.setFirstName("Darlene");
@@ -457,15 +457,15 @@ class EmployeeData extends EmployeeModel {
 		acctRF5.setPagibigNo("104907708845");
 		acctRF5.setStatus("Probationary");
 		acctRF5.setPosition("Account Rank and File");
-		acctRF5.setSupervisor(acctTL1.getLastName() +  " , " + acctTL1.getFirstName());
+		acctRF5.setSupervisor(acctTL1.getLastName() + " , " + acctTL1.getFirstName());
 		acctRF5.setBasicSalary(23250);
 		acctRF5.setRiceSubsidy(1500);
 		acctRF5.setPhoneAllowance(500);
 		acctRF5.setClothingAllowance(500);
 		acctRF5.setSemiMonthlyRate(11625);
 		acctRF5.setHourlyRate(138.39);
-		
-	Employee acctRF6 = new Employee();	
+
+		Employee acctRF6 = new Employee();
 		acctRF6.setEmpNo("10022");
 		acctRF6.setLastName("Delos Santos");
 		acctRF6.setFirstName("Kolby");
@@ -478,15 +478,15 @@ class EmployeeData extends EmployeeModel {
 		acctRF6.setPagibigNo("113017988667");
 		acctRF6.setStatus("Probationary");
 		acctRF6.setPosition("Account Rank and File");
-		acctRF6.setSupervisor(acctTL1.getLastName() +  " , " + acctTL1.getFirstName());
+		acctRF6.setSupervisor(acctTL1.getLastName() + " , " + acctTL1.getFirstName());
 		acctRF6.setBasicSalary(24000);
 		acctRF6.setRiceSubsidy(1500);
 		acctRF6.setPhoneAllowance(500);
 		acctRF6.setClothingAllowance(500);
 		acctRF6.setSemiMonthlyRate(12000);
 		acctRF6.setHourlyRate(142.86);
-		
-	Employee acctRF7 = new Employee();	
+
+		Employee acctRF7 = new Employee();
 		acctRF7.setEmpNo("10023");
 		acctRF7.setLastName("Santos");
 		acctRF7.setFirstName("Vella");
@@ -499,15 +499,15 @@ class EmployeeData extends EmployeeModel {
 		acctRF7.setPagibigNo("360028104576");
 		acctRF7.setStatus("Probationary");
 		acctRF7.setPosition("Account Rank and File");
-		acctRF7.setSupervisor(acctTL1.getLastName() +  " , " + acctTL1.getFirstName());
+		acctRF7.setSupervisor(acctTL1.getLastName() + " , " + acctTL1.getFirstName());
 		acctRF7.setBasicSalary(22500);
 		acctRF7.setRiceSubsidy(1500);
 		acctRF7.setPhoneAllowance(500);
 		acctRF7.setClothingAllowance(500);
 		acctRF7.setSemiMonthlyRate(11250);
 		acctRF7.setHourlyRate(133.93);
-  	
-	Employee acctRF8 = new Employee();	
+
+		Employee acctRF8 = new Employee();
 		acctRF8.setEmpNo("10024");
 		acctRF8.setLastName("Del Rosario");
 		acctRF8.setFirstName("Tomas");
@@ -520,15 +520,15 @@ class EmployeeData extends EmployeeModel {
 		acctRF8.setPagibigNo("913108649964");
 		acctRF8.setStatus("Probationary");
 		acctRF8.setPosition("Account Rank and File");
-		acctRF8.setSupervisor(acctTL1.getLastName() +  " , " + acctTL1.getFirstName());
+		acctRF8.setSupervisor(acctTL1.getLastName() + " , " + acctTL1.getFirstName());
 		acctRF8.setBasicSalary(22500);
 		acctRF8.setRiceSubsidy(1500);
 		acctRF8.setPhoneAllowance(500);
 		acctRF8.setClothingAllowance(500);
 		acctRF8.setSemiMonthlyRate(11250);
-		acctRF8.setHourlyRate(133.93);	
-		
-	Employee acctRF9 = new Employee();	
+		acctRF8.setHourlyRate(133.93);
+
+		Employee acctRF9 = new Employee();
 		acctRF9.setEmpNo("10025");
 		acctRF9.setLastName("Tolentino");
 		acctRF9.setFirstName("Jacklyn");
@@ -541,15 +541,15 @@ class EmployeeData extends EmployeeModel {
 		acctRF9.setPagibigNo("210546661243");
 		acctRF9.setStatus("Probationary");
 		acctRF9.setPosition("Account Rank and File");
-		acctRF9.setSupervisor(acctTL2.getLastName() +  " , " + acctTL2.getFirstName());
+		acctRF9.setSupervisor(acctTL2.getLastName() + " , " + acctTL2.getFirstName());
 		acctRF9.setBasicSalary(24000);
 		acctRF9.setRiceSubsidy(1500);
 		acctRF9.setPhoneAllowance(500);
 		acctRF9.setClothingAllowance(500);
 		acctRF9.setSemiMonthlyRate(12000);
-		acctRF9.setHourlyRate(142.86);	
-		
-	Employee acctRF10 = new Employee();	
+		acctRF9.setHourlyRate(142.86);
+
+		Employee acctRF10 = new Employee();
 		acctRF10.setEmpNo("10026");
 		acctRF10.setLastName("Gutierrez");
 		acctRF10.setFirstName("Percival");
@@ -562,15 +562,15 @@ class EmployeeData extends EmployeeModel {
 		acctRF10.setPagibigNo("210897095686");
 		acctRF10.setStatus("Probationary");
 		acctRF10.setPosition("Account Rank and File");
-		acctRF10.setSupervisor(acctTL2.getLastName() +  " , " + acctTL2.getFirstName());
+		acctRF10.setSupervisor(acctTL2.getLastName() + " , " + acctTL2.getFirstName());
 		acctRF10.setBasicSalary(24750);
 		acctRF10.setRiceSubsidy(1500);
 		acctRF10.setPhoneAllowance(500);
 		acctRF10.setClothingAllowance(500);
 		acctRF10.setSemiMonthlyRate(12375);
-		acctRF10.setHourlyRate(147.32);	
-		
-	Employee acctRF11 = new Employee();	
+		acctRF10.setHourlyRate(147.32);
+
+		Employee acctRF11 = new Employee();
 		acctRF11.setEmpNo("10027");
 		acctRF11.setLastName("Manalaysay");
 		acctRF11.setFirstName("Garfield");
@@ -583,15 +583,15 @@ class EmployeeData extends EmployeeModel {
 		acctRF11.setPagibigNo("211274476563");
 		acctRF11.setStatus("Probationary");
 		acctRF11.setPosition("Account Rank and File");
-		acctRF11.setSupervisor(acctTL2.getLastName() +  " , " + acctTL2.getFirstName());
+		acctRF11.setSupervisor(acctTL2.getLastName() + " , " + acctTL2.getFirstName());
 		acctRF11.setBasicSalary(24750);
 		acctRF11.setRiceSubsidy(1500);
 		acctRF11.setPhoneAllowance(500);
 		acctRF11.setClothingAllowance(500);
 		acctRF11.setSemiMonthlyRate(12375);
-		acctRF11.setHourlyRate(147.32);	
-		
-	Employee acctRF12 = new Employee();	
+		acctRF11.setHourlyRate(147.32);
+
+		Employee acctRF12 = new Employee();
 		acctRF12.setEmpNo("10028");
 		acctRF12.setLastName("Villegas");
 		acctRF12.setFirstName("Lizeth ");
@@ -604,15 +604,15 @@ class EmployeeData extends EmployeeModel {
 		acctRF12.setPagibigNo("122238077997");
 		acctRF12.setStatus("Probationary");
 		acctRF12.setPosition("Account Rank and File");
-		acctRF12.setSupervisor(acctTL2.getLastName() +  " , " + acctTL2.getFirstName());
+		acctRF12.setSupervisor(acctTL2.getLastName() + " , " + acctTL2.getFirstName());
 		acctRF12.setBasicSalary(24000);
 		acctRF12.setRiceSubsidy(1500);
 		acctRF12.setPhoneAllowance(500);
 		acctRF12.setClothingAllowance(500);
 		acctRF12.setSemiMonthlyRate(12000);
-		acctRF12.setHourlyRate(142.86);	
-		
-	Employee acctRF13 = new Employee();	
+		acctRF12.setHourlyRate(142.86);
+
+		Employee acctRF13 = new Employee();
 		acctRF13.setEmpNo("10029");
 		acctRF13.setLastName("Ramos");
 		acctRF13.setFirstName("Carol");
@@ -625,15 +625,15 @@ class EmployeeData extends EmployeeModel {
 		acctRF13.setPagibigNo("212141893454");
 		acctRF13.setStatus("Probationary");
 		acctRF13.setPosition("Account Rank and File");
-		acctRF13.setSupervisor(acctTL2.getLastName() +  " , " + acctTL2.getFirstName());
+		acctRF13.setSupervisor(acctTL2.getLastName() + " , " + acctTL2.getFirstName());
 		acctRF13.setBasicSalary(22500);
 		acctRF13.setRiceSubsidy(1500);
 		acctRF13.setPhoneAllowance(500);
 		acctRF13.setClothingAllowance(500);
 		acctRF13.setSemiMonthlyRate(11250);
-		acctRF13.setHourlyRate(133.93);	
-		
-	Employee acctRF14 = new Employee();	
+		acctRF13.setHourlyRate(133.93);
+
+		Employee acctRF14 = new Employee();
 		acctRF14.setEmpNo("10030");
 		acctRF14.setLastName("Maceda");
 		acctRF14.setFirstName("Emelia");
@@ -646,15 +646,15 @@ class EmployeeData extends EmployeeModel {
 		acctRF14.setPagibigNo("515012579765");
 		acctRF14.setStatus("Probationary");
 		acctRF14.setPosition("Account Rank and File");
-		acctRF14.setSupervisor(acctTL2.getLastName() +  " , " + acctTL2.getFirstName());
+		acctRF14.setSupervisor(acctTL2.getLastName() + " , " + acctTL2.getFirstName());
 		acctRF14.setBasicSalary(22500);
 		acctRF14.setRiceSubsidy(1500);
 		acctRF14.setPhoneAllowance(500);
 		acctRF14.setClothingAllowance(500);
 		acctRF14.setSemiMonthlyRate(11250);
-		acctRF14.setHourlyRate(133.93);	
-		
-	Employee acctRF15 = new Employee();	
+		acctRF14.setHourlyRate(133.93);
+
+		Employee acctRF15 = new Employee();
 		acctRF15.setEmpNo("10031");
 		acctRF15.setLastName("Aguilar");
 		acctRF15.setFirstName("Delia ");
@@ -667,15 +667,15 @@ class EmployeeData extends EmployeeModel {
 		acctRF15.setPagibigNo("110018813465");
 		acctRF15.setStatus("Probationary");
 		acctRF15.setPosition("Account Rank and File");
-		acctRF15.setSupervisor(acctTL2.getLastName() +  " , " + acctTL2.getFirstName());
+		acctRF15.setSupervisor(acctTL2.getLastName() + " , " + acctTL2.getFirstName());
 		acctRF15.setBasicSalary(22500);
 		acctRF15.setRiceSubsidy(1500);
 		acctRF15.setPhoneAllowance(500);
 		acctRF15.setClothingAllowance(500);
 		acctRF15.setSemiMonthlyRate(11250);
-		acctRF15.setHourlyRate(133.93);	
-		
-	Employee sm = new Employee();	
+		acctRF15.setHourlyRate(133.93);
+
+		Employee sm = new Employee();
 		sm.setEmpNo("10032");
 		sm.setLastName("Castro");
 		sm.setFirstName("John Rafael");
@@ -688,15 +688,15 @@ class EmployeeData extends EmployeeModel {
 		sm.setPagibigNo("697764069311");
 		sm.setStatus("Regular");
 		sm.setPosition("Sales & Marketing");
-		sm.setSupervisor(cmo.getLastName() +  " , " + cmo.getFirstName());
+		sm.setSupervisor(cmo.getLastName() + " , " + cmo.getFirstName());
 		sm.setBasicSalary(52670);
 		sm.setRiceSubsidy(1500);
 		sm.setPhoneAllowance(1000);
 		sm.setClothingAllowance(1000);
 		sm.setSemiMonthlyRate(26335);
-		sm.setHourlyRate(313.51);	
-		
-	Employee scl = new Employee();	
+		sm.setHourlyRate(313.51);
+
+		Employee scl = new Employee();
 		scl.setEmpNo("10033");
 		scl.setLastName("Martinez");
 		scl.setFirstName("JCarlos Ian");
@@ -709,15 +709,15 @@ class EmployeeData extends EmployeeModel {
 		scl.setPagibigNo("993372963726");
 		scl.setStatus("Regular");
 		scl.setPosition("Supply Chain and Logistics");
-		scl.setSupervisor(cmo.getLastName() +  " , " + cmo.getFirstName());
+		scl.setSupervisor(cmo.getLastName() + " , " + cmo.getFirstName());
 		scl.setBasicSalary(52670);
 		scl.setRiceSubsidy(1500);
 		scl.setPhoneAllowance(1000);
 		scl.setClothingAllowance(1000);
 		scl.setSemiMonthlyRate(26335);
-		scl.setHourlyRate(313.51);	
-		
-	Employee csr = new Employee();	
+		scl.setHourlyRate(313.51);
+
+		Employee csr = new Employee();
 		csr.setEmpNo("10034");
 		csr.setLastName("Santos");
 		csr.setFirstName("Beatriz");
@@ -730,25 +730,24 @@ class EmployeeData extends EmployeeModel {
 		csr.setPagibigNo("874042259378");
 		csr.setStatus("Regular");
 		csr.setPosition("Customer Service and Relations");
-		csr.setSupervisor(cmo.getLastName() +  " , " + cmo.getFirstName());
+		csr.setSupervisor(cmo.getLastName() + " , " + cmo.getFirstName());
 		csr.setBasicSalary(52670);
 		csr.setRiceSubsidy(1500);
 		csr.setPhoneAllowance(1000);
 		csr.setClothingAllowance(1000);
 		csr.setSemiMonthlyRate(26335);
-		csr.setHourlyRate(313.51);	
-		
-		employeesMPH = new Employee[] {ceo, coo, cfo,
+		csr.setHourlyRate(313.51);
+
+		employeesMPH = new Employee[] { ceo, coo, cfo,
 				cmo, itops, hrMgr, hrTM, hrRF1, hrRF2, acctgHead,
 				payrollMgr, payrollTL, payrollRF1, payrollRF2, acctMgr, acctTL1, acctTL2,
-				acctRF1, acctRF2, acctRF3, acctRF4, acctRF5, acctRF6, acctRF7, 
+				acctRF1, acctRF2, acctRF3, acctRF4, acctRF5, acctRF6, acctRF7,
 				acctRF8, acctRF9, acctRF10, acctRF11, acctRF12, acctRF13, acctRF14,
-				acctRF15, sm, scl, csr};
-  }	
-	
-	public Employee[] getEmployeeModelList() {
-        return employeesMPH;
-    	}
-	
+				acctRF15, sm, scl, csr };
 	}
 
+	public Employee[] getEmployeeModelList() {
+		return employeesMPH;
+	}
+
+}
