@@ -51,8 +51,10 @@ private static boolean login() {
     final String PASSWORD = "1234";
     
     System.out.println("****************************");
-	System.out.println("**** Welcome to MotorPH ****");
-	System.out.println("****************************");
+    System.out.println("**   Welcome to MotorPH   **");
+    System.out.println("**      ADMIN LOGIN       **");
+    System.out.println("****************************");
+	
 	
     for (int i = 3; i > 0; i--) {
         System.out.print("Enter username: ");
