@@ -64,8 +64,8 @@
 	}
 
 	public double getWithholdingTax(double salary) {
-		double tax = 0.0;
-		if (salary <= 20832) {
+	double tax = 0.0;
+	if (salary <= 20832) {
             tax = 0.0; // No withholding tax
         } else if (salary < 33333) {
             tax = (salary - 20833) * 0.20;
