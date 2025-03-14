@@ -83,7 +83,7 @@
 	}
 
 	public double getPhilHealthDeduction(double salary) {
-		double premiumRate = 0.03; // 3% of the monthly salary
+	double premiumRate = 0.03; // 3% of the monthly salary
         double monthlyPremium = salary * premiumRate;
 
         // Apply limits based on the given table
@@ -97,8 +97,7 @@
 	}
 
 	public double getPagibigDeduction(double salary) {
-		double employeeContribution;
-       
+	double employeeContribution;
 
         if (salary >= 1000 && salary <= 1500) {
             employeeContribution = salary * 0.01; // 1% of salary
