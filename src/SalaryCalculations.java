@@ -1,20 +1,23 @@
 
  class SalaryCalculations{
 	
-	double salary;
-	
+	double salary; // Declare a variable to store the salary
+
+	// Calculates the gross weekly salary based on a standard 40-hour work week.
 	public double grossWeeklySalary(double salaryperhour) {
 		return salaryperhour *40;		
 	}
-	
+
+	// Calculates the gross monthly salary based on a standard 160-hour work month.
 	public double grossMonthlySalary(double salaryperhour) {
 		return salaryperhour *160;		
 	}
-	
+
+	// Calculates the salary based on the total hours worked.
 	public double salaryPerHoursWorked(double hours, double salaryperhour) {
 		return salaryperhour * hours;
 	}
-		
+
  	public double sssDeduction(double salary) {
 	        if (salary < 3250) return 135.00;
 	        else if (salary < 3750) return 157.50;
