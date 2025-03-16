@@ -107,7 +107,7 @@ public class Main {
         System.out.println("***********************************************");
 
         // Prompt the user to enter an Employee ID or Last Name
-        System.out.println("*****Enter Employee ID or Last Name: ");
+        System.out.print("*****Enter Employee ID or Last Name: ");
         String input = scanner.nextLine();
 
         boolean found = false;
@@ -151,8 +151,9 @@ public class Main {
         for (Employee emp : employees) {
             // Check if the entered input matches either the employee ID or last name (case-insensitive)
             if (emp.getEmpNo().equalsIgnoreCase(input) || emp.getLastName().equalsIgnoreCase(input)) {
-                System.out.println("Enter number of Total Hours worked: ");
+                System.out.print("Enter number of Total Hours worked: ");
                 double hours = scanner.nextDouble();
+                scanner.nextLine();
                 double salary = sd.salaryPerHoursWorked(hours, emp.getHourlyRate());
                 System.out.println("Employee: " + emp.getLastName() + " , " + emp.getFirstName());
                 System.out.println("Position: " + emp.getPosition());
