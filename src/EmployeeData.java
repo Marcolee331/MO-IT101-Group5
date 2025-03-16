@@ -1,7 +1,8 @@
-
+// Creating a new class to create instances of the objects inherited from the Employee class.
 class EmployeeData extends EmployeeModel {
-	// Creating a new class to create instances of the objects inherited from the
-	// Employee class.
+
+	// Constructor for EmployeeData class.
+	// Initializes the employee objects with their respective details.
 	public EmployeeData() {
 		Employee ceo = new Employee();
 		ceo.setEmpNo("10001");

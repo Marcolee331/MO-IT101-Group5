@@ -1,6 +1,6 @@
 public class Employee {
 
-	// These are constructors set in private
+	// Attributes of the Employee class set in private
 	private String eid;
 	private String lastName;
 	private String firstName;
