@@ -7,9 +7,11 @@ public class Main {
     static ArrayList<String[]> empMPH = new ArrayList<>();
     static EmployeeModel employeeModel = new EmployeeData();
     static SalaryCalculations sd = new SalaryCalculations();
+    static GrossCalculation grossCalculation = new GrossCalculation();
 
     public static void main(String[] args) {
-        if (!login()) { // Dislay an error message if the login method returns false (meaning authentication failed)
+        if (!login()) { // Dislay an error message if the login method returns false (meaning
+                        // authentication failed)
             System.out.println("Too many failed attempts. Exiting...");
             return; // Stop execution if login fails
         }
@@ -20,8 +22,9 @@ public class Main {
             System.out.println("\n=== Welcome to Employee Management System ===");
             System.out.println("1. View Employee Masterlist");
             System.out.println("2. Salary Details");
-            System.out.println("3. Net Salary Calculation");
-            System.out.println("4. Exit");
+            System.out.println("3. Gross Salary Calculation");
+            System.out.println("4. Net Salary Calculation");
+            System.out.println("5. Exit");
             System.out.print("Select an option: ");
             String choice = scanner.nextLine();
 
@@ -33,9 +36,12 @@ public class Main {
                     salaryDetails();
                     break;
                 case "3":
+                    grossCalculation.grossCal(); // Call the method to calculate gross salary from GrossCalculation.java
+                    break;
+                case "4":
                     netSalaryCalculation();
                     break;
-                case "4": // Exit the loop and terminate the program
+                case "5": // Exit the loop and terminate the program
                     exit = true;
                     System.out.println("Exiting system...");
                     break;
@@ -68,8 +74,8 @@ public class Main {
             if (user.equals(USERNAME) && pass.equals(PASSWORD)) {
                 System.out.println("Login successful!");
                 return true;
-            } 
-            
+            }
+
             else { // Display remaining attempts if login fails
                 System.out.println("Incorrect credentials. Attempts left: " + (i - 1));
             }
@@ -108,14 +114,15 @@ public class Main {
         System.out.println("**           Employee Basic Salary           **");
         System.out.println("**                 Details                   **");
         System.out.println("***********************************************");
-        
+
         // Prompt the user to enter an Employee ID or Last Name
         System.out.print("***** Enter Employee ID or Last Name: ");
         String input = scanner.nextLine();
 
         boolean found = false;
         for (Employee emp : employees) {
-            // Check if the entered input matches either the employee ID or last name (case-insensitive)
+            // Check if the entered input matches either the employee ID or last name
+            // (case-insensitive)
             if (emp.getEmpNo().equalsIgnoreCase(input) || emp.getLastName().equalsIgnoreCase(input)) {
                 // Display salary details of employees
                 System.out.println("Employee: " + emp.getLastName() + " , " + emp.getFirstName());
@@ -152,12 +159,13 @@ public class Main {
 
         boolean found = false;
         for (Employee emp : employees) {
-            // Check if the entered input matches either the employee ID or last name (case-insensitive)
+            // Check if the entered input matches either the employee ID or last name
+            // (case-insensitive)
             if (emp.getEmpNo().equalsIgnoreCase(input) || emp.getLastName().equalsIgnoreCase(input)) {
                 System.out.print("Enter number of Total Hours worked: ");
                 double hours = scanner.nextDouble();
                 scanner.nextLine(); // Consume the newline character after nextDouble()
-                
+
                 double salary = sd.salaryPerHoursWorked(hours, emp.getHourlyRate());
                 System.out.println("Employee: " + emp.getLastName() + " , " + emp.getFirstName());
                 System.out.println("Position: " + emp.getPosition());
