@@ -1,4 +1,3 @@
-import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -8,6 +7,7 @@ public class Main {
     static EmployeeModel employeeModel = new EmployeeData();
     static SalaryCalculations sd = new SalaryCalculations();
     static GrossCalculation grossCalculation = new GrossCalculation();
+    static ViewEmployee viewEmployee = new ViewEmployee();
 
     public static void main(String[] args) {
         if (!login()) { // Dislay an error message if the login method returns false (meaning
@@ -30,7 +30,7 @@ public class Main {
 
             switch (choice) { // Evaluate user's choice
                 case "1":
-                    viewEmployees();
+                    viewEmployee.view(); // Call the method to view employee list from ViewEmployee.java
                     break;
                 case "2":
                     salaryDetails();
@@ -81,27 +81,6 @@ public class Main {
             }
         }
         return false;
-    }
-
-    // Display remaining attempts if login fails
-    private static void viewEmployees() {
-        // Retrieve the list of employees from the employee model
-        Employee[] employees = employeeModel.getEmployeeModelList();
-
-        // Header for the employee list section
-        System.out.println("***********************************************");
-        System.out.println("**                MotorPH                    **");
-        System.out.println("**            List of employees              **");
-        System.out.println("***********************************************");
-
-        // Iterate through the employee list and display each employee's details
-        for (Employee employee : employees) {
-            // Print the employee's details, including ID, name, position, and birthdate
-            System.out.println("Emp ID: " + employee.getEmpNo() + ", Employee Name: " +
-                    employee.getLastName() + " " + employee.getFirstName() +
-                    ", Position: " + employee.getPosition() +
-                    ", Date of Birth: " + employee.getBirthday());
-        }
     }
 
     // Method to view salary details of employees
