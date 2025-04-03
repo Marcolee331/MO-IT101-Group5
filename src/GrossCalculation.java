@@ -16,8 +16,8 @@ public class GrossCalculation extends Calculation {
     static double grossIncome;
 
     @Override
-    public double calculateGross(double... params) {
-        totalHours = params[0];
+    public double calculateGross(double calc) {
+        totalHours = calc;
         return grossIncome = totalHours * hourlyRate;
     }
 
