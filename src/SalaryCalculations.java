@@ -1,9 +1,5 @@
 class SalaryCalculations extends Calculation {
 
-	// public double grossWeeklySalary(double salaryperhour) {
-	// return salaryperhour * 40;
-	// }
-
 	@Override // Calculates the gross weekly salary based on a standard 40-hour work week.
 	public double calculateGross(double... params) {
 		return params[0] * 40;
