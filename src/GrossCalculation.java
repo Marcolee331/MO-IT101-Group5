@@ -7,9 +7,19 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
-public class GrossCalculation {
+public class GrossCalculation extends Calculation {
 
     static Scanner scanner = new Scanner(System.in);
+
+    static double totalHours = 0;
+    static double hourlyRate = 0;
+    static double grossIncome;
+
+    @Override
+    public double calculateGross(double... params) {
+        totalHours = params[0];
+        return grossIncome = totalHours * hourlyRate;
+    }
 
     /**
      * Method to calculate the gross salary of an employee based on attendance data.
@@ -21,8 +31,6 @@ public class GrossCalculation {
         // Path to the CSV file containing attendance data
         String file = "src\\AttendanceData.csv";
         String line;
-        double totalHours = 0;
-        double hourlyRate = 0;
         boolean employeeFound = false;
 
         // Prompt the user to enter the employee number and date range
@@ -67,8 +75,8 @@ public class GrossCalculation {
 
             // If the employee is found, calculate and display the gross income
             if (employeeFound) {
-                // Calculate gross income
-                double grossIncome = totalHours * hourlyRate;
+                // Calculate gross income using method from Calculation class
+                calculateGross(totalHours);
 
                 // Header for employee gross salary section
                 System.out.println("***********************************************");

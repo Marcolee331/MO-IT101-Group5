@@ -108,7 +108,7 @@ public class Main {
                 System.out.println("Position: " + emp.getPosition());
                 System.out.println("Hourly Rate: " + emp.getHourlyRate());
                 System.out.println("Basic Salary:  " + emp.getBasicSalary());
-                System.out.println("Gross Weekly Salary: " + sd.grossWeeklySalary(emp.getHourlyRate()));
+                System.out.println("Gross Weekly Salary: " + sd.calculateGross(emp.getHourlyRate()));
                 System.out.println("Gross Monthly Salary: " + sd.grossMonthlySalary(emp.getHourlyRate()));
                 found = true;
                 break;
